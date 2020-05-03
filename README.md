@@ -1,2 +1,2 @@
 # TreasureHunt
-Web design for the treasure hunt assgignment
+Web design for the treasure hunt assignment
