@@ -4,6 +4,8 @@
 <head>
     <title> Admin</title>
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="admin.css">
+    
 </head>
 
 <body>
@@ -37,82 +39,105 @@
 
 <main>
     
-  <div class="bg-info">
-    <h5 class="bg-info text-center">Fill in the form</h5>
+  <div class="container mt-4">
+    <h1 class="text-info font-weight-bold">Add New Game</h1>
   </div>
 
-    <form class="container pt-4 pb-4">
+    <form class="container pb-4">
+
+
         <div class = "form-row pb-4">
-            <label>Title</label>
+            <label class="font-weight-bold">Title</label>
             <input type="text" class="form-control" placeholder="Title" required>
         </div>
 
         <div class = "form-row pb-4">
-            <label>Venue</label>
+            <label class="font-weight-bold">Venue</label>
             <input type="text" class="form-control" placeholder="Venue" required>
         </div>
 
         <div class = "form-row pb-4">
-            <label>Date</label>
+          <div class="form-group col-md-6">
+            <label class="font-weight-bold">Date</label>
             <input type="date" class="form-control" required>
-        </div>
+          </div>
 
-        <div class = "form-row pb-4">
-            <label>Time</label>
+          <div class = "form-group col-md-6">
+            <label class="font-weight-bold">Time</label>
             <input type="time" class="form-control" required>
         </div>
 
-        <div class = "form-row pb-4">
-            <label>Description</label>
-            <input type="text" class="form-control" placeholder="Event is..." required>
+        </div>
+
+        
+
+        <div class = " form-row pb-4">
+            <label class="font-weight-bold">Description</label>
+            <textarea class="form-control" rows="5" id="comment" required></textarea>
         </div>
 
         <div class = "form-row pb-4">
-            <label>Maximum Participant</label>
+
+          <div class="form-group col-md-6">
+            <label class="font-weight-bold">Maximum Participant</label>
             <input type="number" class="form-control" required>
+          </div>
+
+          <div class = " col-md-6 form-group">
+            <label class="font-weight-bold">Fee</label>
+            <div class="input-group">
+              <span class="input-group-text">RM</span>
+              <input type="number" class="form-control" placeholder="Fee" required>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form-row">
+          <div class = "col-md-6 form-group pb-4">
+              <label class="font-weight-bold">Registeration date - start</label>
+              <input type="date" class="form-control" required>
+          </div>
+
+          <div class = "col-md-6 form-group pb-4">
+              <label class="font-weight-bold">Registeration date - end</label>
+              <input type="date" class="form-control" required>
+          </div>
+        </div>
+
+        <div class="form-row pb-4">
+          <div class ="col">
+              <label class="font-weight-bold">Email</label>
+              <input type="text" class="form-control" placeholder="abc@xyz.com" required>
+          </div>
+
+          <div class = "col">
+              <label class="font-weight-bold">Phone No.</label>
+              <input type="text" class="form-control" placeholder="Phone No." required>
+          </div>
         </div>
 
         <div class = "form-row pb-4">
-            <label>Fee</label>
-            <input type="number" class="form-control" placeholder="Fee" required>
-        </div>
-
-        <div class = "form-row pb-4">
-            <label>Registeration date - start</label>
-            <input type="date" class="form-control" required>
-        </div>
-
-        <div class = "form-row pb-4">
-            <label>Registeration date - end</label>
-            <input type="date" class="form-control" required>
-        </div>
-
-        <div class = "form-row pb-4">
-            <label>Email</label>
-            <input type="text" class="form-control" placeholder="abc@xyz.com" required>
-        </div>
-
-        <div class = "form-row pb-4">
-            <label>Phone No.</label>
-            <input type="text" class="form-control" placeholder="Phone No." required>
-        </div>
-
-        <div class = "form-row pb-4">
-            <label>Poster or any photo related</label>
+            <label class="font-weight-bold">Poster or any photo related</label>
             <input type="file" class="form-control file" required>
-            <button>Upload</button>
+            <button class="btn btn-primary font-weight-bold">Upload</button>
         </div>
         
-        <div class="pb-3">
-            <button> Confirm</button>
+        <div class="pb-3 text-center">
+            <button class="btn btn-primary font-weight-bold"> Confirm</button>
+          
             <!-- redirect to manage -->
-            <button> Reset</button>
-            <button> Cancel</button>
+          <!-- <div class=""> -->
+            <button class="btn btn-secondary ml-4 mr-4 font-weight-bold"> Reset</button>
+          <!-- </div> -->
+          <!-- <div class=""> -->
+            
+            <button class="btn btn-danger font-weight-bold button" style="text-decoration: none;"><a href="AdminManage.html"> Cancel</a></button>
             <!-- redirect to manage -->
+          <!-- </div> -->
         </div>
         
     </form>
-
 
 </main>
 
