@@ -1,0 +1,38 @@
+header {
+    padding: 60px 0 100px;
+  }
+  nav{
+      background-color: black;
+      font-weight: bold;
+      color: white;
+  }
+
+
+
+/* 
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+<div class="container-fluid">
+
+    <!-- logo -->
+  <a class="navbar-brand" href="#"><img src="img/logo.png" width="50">Treasure</a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto navbar-right">
+            <li class="nav-item">
+                <a href="homePage.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#"  class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="admin.html"  class="nav-link">Login - Admin</a>
+            </li>
+        </ul>
+    </div>
+    
+</div>
+</nav> */
