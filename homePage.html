@@ -3,12 +3,12 @@
 
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Treasure Hunt - Home</title>
 
     <link rel="stylesheet" type="text/css" href="css/homepage.css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/nav_footer.css">
     
 </head>
 
@@ -17,14 +17,15 @@
 
       <!-- Navigator -->
       <nav class="navbar navbar-expand-lg fixed-top py-3">
-        <div class="container"><a href="homePage.html" class="navbar-brand text-uppercase font-weight-bold"><img src="img/logo.png" width="40"> Treasure</a>
+        <div class="container"><a href="homePage.html" class="navbar-brand text-uppercase font-weight-bold"><img src="img/logo.png" width="40"> Treasure: Be The King</a>
             <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
             
             <div id="navbarSupportedContent" class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active"><a href="#body" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
                     <li class="nav-item"><a href="#about" class="nav-link text-uppercase font-weight-bold">About Us</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
+                    <li class="nav-item"><a href="#hunter" class="nav-link text-uppercase font-weight-bold">Hunter</a></li>
+                    <li class="nav-item"><a href="#hunter" class="nav-link text-uppercase font-weight-bold">Organizer</a></li>
                     <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Login</a></li>
                 </ul>
             </div>
@@ -32,6 +33,7 @@
     </nav>
     <!-- end Navigator -->
 
+    <!-- carousel -->
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -43,24 +45,24 @@
             <img class="d-block w-100" src="img/pirate1.jpg" alt="First slide">
             <div class="carousel-caption d-none d-lg-block">
               <h1>Hunter</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
-              <p><button><a href="#hunter">Read More</a></button></p>
+              <p>Be the Hunter. Hunt the treasure to be the king.</p>
+              <p><a href="#hunter" class="btn btn-light">Read More</a></p>
             </div>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="img/pirate2.jpg" alt="Second slide">
             <div class="carousel-caption d-none d-lg-block">
               <h1>Organizer</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
-              <p><button><a href="#organizer">Read More</a></button></p>
+              <p>Host treasure hunt game.</p>
+              <p><a href="#organizer" class="btn btn-light">Read More</a></p>
             </div>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="img/pirate3.jpg" alt="Third slide">
             <div class="carousel-caption d-none d-lg-block">
               <h1>Read More</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
-              <p><button><a href="#about">Read More</a></button></p>
+              <p>Treasure aim to be the treasure hunt hosting platform.</p>
+              <p><a href="#about" class="btn btn-light">Read More</a></p>
             </div>
           </div>
         </div>
@@ -73,6 +75,8 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+    <!-- end carousel -->
+
     </header>
      
 <!-- about us -->
@@ -84,13 +88,13 @@
     </div>
 
     <div class="row">
-      <div class="col-xs-12 col-md-6"> <img src="img/pirate2.jpg" class="img-responsive" alt=""> </div>
+      <div class="col-xs-12 col-md-6"> <img src="img/aboutUs.jpg" class="img-responsive" alt=""> </div>
       <div class="col-xs-12 col-md-6">
         <div class="about-text">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
           <a href="#hunter" class="btn btn-default btn-lg page-scroll"> Hunter</a>
-          <a href="organizer" class="btn btn-default btn-lg page-scroll"> Organizer</a>
+          <a href="#organizer" class="btn btn-default btn-lg page-scroll"> Organizer</a>
         </div>
       </div>
     </div>
@@ -113,7 +117,7 @@
           <a href="login.html" class="btn btn-default btn-lg page-scroll"> Hunt your treasure!</a> 
         </div>
       </div>
-      <div class="col-xs-12 col-md-6"> <img src="img/pirate2.jpg" class="img-responsive" alt=""> </div>
+      <div class="col-xs-12 col-md-6"> <img src="img/hunter.jpg" class="img-responsive" alt=""> </div>
 
     </div>
 
@@ -130,7 +134,7 @@
     </div>
 
     <div class="row">
-      <div class="col-xs-12 col-md-6"> <img src="img/pirate1.jpg" class="img-responsive" alt=""> </div>
+      <div class="col-xs-12 col-md-6"> <img src="img/organizer.jpg" class="img-responsive" alt=""> </div>
 
       <div class="col-xs-12 col-md-6">
         <div class="organizer-text">
@@ -144,31 +148,91 @@
   </div>
 </div>
 
-    <!-- Game List Section -->
+<!-- Game List Section -->
+<div id="game-list">
 
-   <div id="game-list">
+<div class="container">
+<div class="section-title text-center center">
+  <h2>Treasure Hunt Game</h2>
+  <hr>
+</div>
 
-    <div class="container">
-      <div class="section-title text-center center">
-        <h2>Game</h2>
-        <hr>
+<div class="row">
+
+  <div class="col-6" style="max-width: 580px;">
+    <div class="game-list-item">
+
+    <div class="row">
+        <div class="col-7">
+          <div class="hover-bg"> 
+            <div class="hover-text">
+              <h4>Project Title</h4>
+            </div>
+            <img src="img/game.png" class="img-responsive" alt="Project Title">
+          </div>
+        </div>
+
+        <div class="col-5">
+          <div class="game-desc">
+            <p>Title: Asari</p>
+            <p>Description: Find Meridian Becon</p>
+            <p>Fee: RM20 per pax</p>
+            <p>Title: Asari</p>
+            <a href="#hunter" class="bg-dark text-white btn btn-sm"> Hunter</a>
+          </div>
+        </div>
       </div>
-  
-      <div class="row">
-  
+    </div>
+  </div>
+
+  <div class="col-6" style="max-width: 580px;">
+    <div class="game-list-item">
+
+    <div class="row">
+        <div class="col-7">
+          <div class="hover-bg"> 
+            <div class="hover-text">
+              <h4>Project Title</h4>
+            </div>
+            <img src="img/game.png" class="img-responsive" alt="Project Title">
+          </div>
+        </div>
+
+        <div class="col-5">
+          <div class="game-desc">
+            <p>Title: Asari</p>
+            <p>Description: Find Meridian Becon</p>
+            <p>Fee: RM20 per pax</p>
+            <p>Title: Asari</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<br>
+
+<div class="text-center">
+  <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">More</button>
+</div>
+
+  <div class="pt-4 collapse multi-collapse" id="multiCollapseExample2">
+    <div class="row">
+
         <div class="col-6" style="max-width: 580px;">
           <div class="game-list-item">
-  
+
           <div class="row">
               <div class="col-7">
                 <div class="hover-bg"> 
                   <div class="hover-text">
                     <h4>Project Title</h4>
                   </div>
-                  <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Project Title">
+                  <img src="img/game.png" class="img-responsive" alt="Project Title">
                 </div>
               </div>
-  
+
               <div class="col-5">
                 <div class="game-desc">
                   <p>Title: Asari</p>
@@ -181,20 +245,20 @@
             </div>
           </div>
         </div>
-  
+
         <div class="col-6" style="max-width: 580px;">
           <div class="game-list-item">
-  
+
           <div class="row">
               <div class="col-7">
                 <div class="hover-bg"> 
                   <div class="hover-text">
                     <h4>Project Title</h4>
                   </div>
-                  <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Project Title">
+                  <img src="img/game.png" class="img-responsive" alt="Project Title">
                 </div>
               </div>
-  
+
               <div class="col-5">
                 <div class="game-desc">
                   <p>Title: Asari</p>
@@ -206,206 +270,145 @@
             </div>
           </div>
         </div>
-  
-      </div>
-      <br>
-  
-      <div class="text-center">
-        <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">More</button>
-      </div>
 
-        <div class="pt-4 collapse multi-collapse" id="multiCollapseExample2">
-          <div class="row">
-  
-              <div class="col-6" style="max-width: 580px;">
-                <div class="game-list-item">
-  
-                <div class="row">
-                    <div class="col-7">
-                      <div class="hover-bg"> 
-                        <div class="hover-text">
-                          <h4>Project Title</h4>
-                        </div>
-                        <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Project Title">
-                      </div>
-                    </div>
-  
-                    <div class="col-5">
-                      <div class="game-desc">
-                        <p>Title: Asari</p>
-                        <p>Description: Find Meridian Becon</p>
-                        <p>Fee: RM20 per pax</p>
-                        <p>Title: Asari</p>
-                        <a href="#hunter" class="bg-dark text-white btn btn-sm"> Hunter</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="col-6" style="max-width: 580px;">
-                <div class="game-list-item">
-  
-                <div class="row">
-                    <div class="col-7">
-                      <div class="hover-bg"> 
-                        <div class="hover-text">
-                          <h4>Project Title</h4>
-                        </div>
-                        <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Project Title">
-                      </div>
-                    </div>
-  
-                    <div class="col-5">
-                      <div class="game-desc">
-                        <p>Title: Asari</p>
-                        <p>Description: Find Meridian Becon</p>
-                        <p>Fee: RM20 per pax</p>
-                        <p>Title: Asari</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-  
-          </div>
-          <br>
-  
-          <div class="row">
-  
-            <div class="col-6" style="max-width: 580px;">
-              <div class="game-list-item">
-  
-              <div class="row">
-                  <div class="col-7">
-                    <div class="hover-bg"> 
-                      <div class="hover-text">
-                        <h4>Project Title</h4>
-                      </div>
-                      <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Project Title">
-                    </div>
-                  </div>
-  
-                  <div class="col-5">
-                    <div class="game-desc">
-                      <p>Title: Asari</p>
-                      <p>Description: Find Meridian Becon</p>
-                      <p>Fee: RM20 per pax</p>
-                      <p>Title: Asari</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-6" style="max-width: 580px;">
-              <div class="game-list-item">
-  
-              <div class="row">
-                  <div class="col-7">
-                    <div class="hover-bg"> 
-                      <div class="hover-text">
-                        <h4>Project Title</h4>
-                      </div>
-                      <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Project Title">
-                    </div>
-                  </div>
-  
-                  <div class="col-5">
-                    <div class="game-desc">
-                      <p>Title: Asari</p>
-                      <p>Description: Find Meridian Becon</p>
-                      <p>Fee: RM20 per pax</p>
-                      <p>Title: Asari</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-  
-          </div>
-          <br>
-  
-          <div class="row">
-  
-            <div class="col-6" style="max-width: 580px;">
-              <div class="game-list-item">
-  
-              <div class="row">
-                  <div class="col-7">
-                    <div class="hover-bg"> 
-                      <div class="hover-text">
-                        <h4>Project Title</h4>
-                      </div>
-                      <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Project Title">
-                    </div>
-                  </div>
-  
-                  <div class="col-5">
-                    <div class="game-desc">
-                      <p>Title: Asari</p>
-                      <p>Description: Find Meridian Becon</p>
-                      <p>Fee: RM20 per pax</p>
-                      <p>Title: Asari</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-6" style="max-width: 580px;">
-              <div class="game-list-item">
-  
-              <div class="row">
-                  <div class="col-7">
-                    <div class="hover-bg"> 
-                      <div class="hover-text">
-                        <h4>Project Title</h4>
-                      </div>
-                      <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Project Title">
-                    </div>
-                  </div>
-  
-                  <div class="col-5">
-                    <div class="game-desc">
-                      <p>Title: Asari</p>
-                      <p>Description: Find Meridian Becon</p>
-                      <p>Fee: RM20 per pax</p>
-                      <p>Title: Asari</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-  
-          </div>
-          <br>
-          
-          <div class="text-center">
-            <a href="#Login.html" class="btn btn-default" type="button">View All</a>
-          </div>
-          
-        </div>
-  
-        
-
-      </div>
     </div>
+    <br>
+
+    <div class="row">
+
+      <div class="col-6" style="max-width: 580px;">
+        <div class="game-list-item">
+
+        <div class="row">
+            <div class="col-7">
+              <div class="hover-bg"> 
+                <div class="hover-text">
+                  <h4>Project Title</h4>
+                </div>
+                <img src="img/game.png" class="img-responsive" alt="Project Title">
+              </div>
+            </div>
+
+            <div class="col-5">
+              <div class="game-desc">
+                <p>Title: Asari</p>
+                <p>Description: Find Meridian Becon</p>
+                <p>Fee: RM20 per pax</p>
+                <p>Title: Asari</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6" style="max-width: 580px;">
+        <div class="game-list-item">
+
+        <div class="row">
+            <div class="col-7">
+              <div class="hover-bg"> 
+                <div class="hover-text">
+                  <h4>Project Title</h4>
+                </div>
+                <img src="img/game.png" class="img-responsive" alt="Project Title">
+              </div>
+            </div>
+
+            <div class="col-5">
+              <div class="game-desc">
+                <p>Title: Asari</p>
+                <p>Description: Find Meridian Becon</p>
+                <p>Fee: RM20 per pax</p>
+                <p>Title: Asari</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br>
+
+    <div class="row">
+
+      <div class="col-6" style="max-width: 580px;">
+        <div class="game-list-item">
+
+        <div class="row">
+            <div class="col-7">
+              <div class="hover-bg"> 
+                <div class="hover-text">
+                  <h4>Project Title</h4>
+                </div>
+                <img src="img/game.png" class="img-responsive" alt="Project Title">
+              </div>
+            </div>
+
+            <div class="col-5">
+              <div class="game-desc">
+                <p>Title: Asari</p>
+                <p>Description: Find Meridian Becon</p>
+                <p>Fee: RM20 per pax</p>
+                <p>Title: Asari</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6" style="max-width: 580px;">
+        <div class="game-list-item">
+
+        <div class="row">
+            <div class="col-7">
+              <div class="hover-bg"> 
+                <div class="hover-text">
+                  <h4>Project Title</h4>
+                </div>
+                <img src="img/game.png" class="img-responsive" alt="Project Title">
+              </div>
+            </div>
+
+            <div class="col-5">
+              <div class="game-desc">
+                <p>Title: Asari</p>
+                <p>Description: Find Meridian Becon</p>
+                <p>Fee: RM20 per pax</p>
+                <p>Title: Asari</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br>
+    
+    <div class="text-center">
+      <a href="#Login.html" class="btn btn-default" type="button">View All</a>
+    </div>
+    
+  </div>
+
+  
+
+</div>
+</div>
 
 
 </div>
 
-  <!-- Site footer -->
-  <footer class="site-footer">
+<!-- Site footer -->
+<footer class="site-footer">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6">
           <h6>About</h6>
-          <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+          <p class="text-justify">Treasure: <i>Be The King </i> is the largest online destination dedicated to treasure hunt game. Here you can discover new games from various of organizer. Join game and win the prize.</p>
         </div>
 
         <div class="col-xs-6 col-md-3">
-          <h6>Categories</h6>
+          <h6>Tag</h6>
           <ul class="footer-links">
             <li><a href="#hunter">Hunter</a></li>
             <li><a href="#organizer">Organizer</a></li>
@@ -418,19 +421,17 @@
             <li><a href="#">Log In</a></li>
             <li><a href="#">Sign Up</a></li>
             <li><a href="#about">About Us</a></li>
-            <li><a href="#">Contribute</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Sitemap</a></li>
           </ul>
         </div>
       </div>
       <hr>
     </div>
+
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-sm-6 col-xs-12">
           <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
-       <a href="#">Treasure</a>.
+       <a href="#">Treasure: Be the King</a>.
           </p>
         </div>
 
@@ -438,7 +439,7 @@
           <ul class="social-icons">
             <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
             <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
             <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
           </ul>
         </div>

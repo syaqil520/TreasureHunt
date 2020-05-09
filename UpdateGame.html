@@ -6,7 +6,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <title> Add New Game</title>
-
   <link rel="stylesheet" type="text/css" href="css/homepage.css">
   <link rel="stylesheet" type="text/css" href="css/nav_footer.css">
 </head>
@@ -32,58 +31,59 @@
 
 <main>
     
-  <div id="addgame" class="newGamebg"> 
-    <h1 class="container">Add New Game</h1>
-  
-    <div class="mt-2 card container">
-      <form>
+  <div id="addgame" class="updateGamebg"> 
+    <h1 class="container">Update your game detail</h1>
+    
+    <div class="card container">
+    
+        <form>
 
-          <div class = "form-row pb-4">
-              <label class="font-weight-bold">Title</label>
-              <input type="text" class="form-control" placeholder="Title" required>
-          </div>
+            <div class = "form-row pb-4">
+                <label class="font-weight-bold">Title</label>
+                <input type="text" class="form-control" placeholder="Title" required>
+            </div>
 
-          <div class = "form-row pb-4">
-              <label class="font-weight-bold">Venue</label>
-              <input type="text" class="form-control" placeholder="Venue" required>
-          </div>
+            <div class = "form-row pb-4">
+                <label class="font-weight-bold">Venue</label>
+                <input type="text" class="form-control" placeholder="Venue" required>
+            </div>
 
-          <div class = "form-row pb-4">
+            <div class = "form-row pb-4">
             <div class="form-group col-md-6">
-              <label class="font-weight-bold">Date</label>
-              <input type="date" class="form-control" required>
+                <label class="font-weight-bold">Date</label>
+                <input type="date" class="form-control" required>
             </div>
 
             <div class = "form-group col-md-6">
-              <label class="font-weight-bold">Time</label>
-              <input type="time" class="form-control" required>
-          </div>
+                <label class="font-weight-bold">Time</label>
+                <input type="time" class="form-control" required>
+            </div>
 
-          </div>
+            </div>
 
-          <div class = " form-row pb-4">
-              <label class="font-weight-bold">Description</label>
-              <textarea class="form-control" rows="5" id="comment" required></textarea>
-          </div>
+            <div class = " form-row pb-4">
+                <label class="font-weight-bold">Description</label>
+                <textarea class="form-control" rows="5" id="comment" required></textarea>
+            </div>
 
-          <div class = "form-row pb-4">
+            <div class = "form-row pb-4">
 
             <div class="form-group col-md-6">
-              <label class="font-weight-bold">Maximum Participant</label>
-              <input type="number" class="form-control" required>
+                <label class="font-weight-bold">Maximum Participant</label>
+                <input type="number" class="form-control" required>
             </div>
 
             <div class = " col-md-6 form-group">
-              <label class="font-weight-bold">Fee</label>
-              <div class="input-group">
+                <label class="font-weight-bold">Fee</label>
+                <div class="input-group">
                 <span class="input-group-text">RM</span>
                 <input type="number" class="form-control" placeholder="Fee" required>
-              </div>
+                </div>
             </div>
 
-          </div>
+            </div>
 
-          <div class="form-row">
+            <div class="form-row">
             <div class = "col-md-6 form-group pb-4">
                 <label class="font-weight-bold">Registeration date - start</label>
                 <input type="date" class="form-control" required>
@@ -93,9 +93,9 @@
                 <label class="font-weight-bold">Registeration date - end</label>
                 <input type="date" class="form-control" required>
             </div>
-          </div>
+            </div>
 
-          <div class="form-row pb-4">
+            <div class="form-row pb-4">
             <div class ="col">
                 <label class="font-weight-bold">Email</label>
                 <input type="text" class="form-control" placeholder="abc@xyz.com" required>
@@ -105,28 +105,28 @@
                 <label class="font-weight-bold">Phone No.</label>
                 <input type="text" class="form-control" placeholder="Phone No." required>
             </div>
-          </div>
+            </div>
 
-          <div class = "form-row pb-4">
+            <div class = "form-row pb-4">
             <div class="col-6">
-              <label class="font-weight-bold">Poster or any photo related</label>
-              <div class="custom-file">
+                <label class="font-weight-bold">Poster or any photo related</label>
+                <div class="custom-file">
                 <input type="file" class="custom-file-input" id="customFile">
                 <label class="custom-file-label" for="customFile">Choose file</label>
-              </div>
+                </div>
             </div>
-          </div>
-          
-          <div class="pb-3 text-center">
+            </div>
+            
+            <div class="pb-3 text-center">
             <input type="submit" class="btn btn-primary font-weight-bold"></input>
             <input type="reset" class="btn btn-secondary font-weight-bold"></input>
             <a href="admin.html" type="button" class="btn btn-danger font-weight-bold"> Cancel</a>
-              
-          </div>
-          
-      </form>
+                
+            </div>
+            
+        </form>
+      </div>
     </div>
-
   </div>
 </main>
 
