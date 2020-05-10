@@ -32,9 +32,11 @@ h1{
 /* About Section */
 h2 {
 	margin: 0 0 20px 0;
-	font-weight: 400;
-	font-size: 36px;
-	color: #fff;
+	color: #FFD37C;
+    text-shadow: 4px 2px 8px black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 4em;
 }
 
 hr {
@@ -105,7 +107,12 @@ hr {
 }
 
 #hunter h2 {
-    color: white;
+    /* color: white; */
+    color: #FFD37C;
+    text-shadow: 4px 2px 8px black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 4em;
 }
 
 #hunter .hunter-text {
@@ -197,7 +204,11 @@ hr {
 
 
 #game-list h2 {
-	color: #fff;
+    color: #FFD37C;
+    text-shadow: 4px 2px 8px black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 4em;
 }
 
 .game-list-item .hover-bg {
@@ -269,15 +280,41 @@ h4 {
     background-size: cover;
 }
 
-.game-card {
-    background-color: rgb(255, 255, 255);
-    margin-left: 120px;
-    margin-right: 120px;
+#yourGame h2{
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 2px 8px black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 4em;
 }
 
+#yourGame h3{
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 2px 8px rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.game-card {
+    background-color: rgb(255, 255, 255);
+    border-color: #fff;
+}
+
+/* .game-card  img{
+} */
 
 .card-desc {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow: auto;
+    font-size: small;
+    /* min-height: auto; */
+    max-height: 120px;
+}
+
+.card-tag {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-height: 3px;
 }
 
 #game-list-organizer{
@@ -286,6 +323,10 @@ h4 {
     background-image: url("../img/backgroundtreasure.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#game-list-organizer h2{
+    color: #fff;
 }
 
 

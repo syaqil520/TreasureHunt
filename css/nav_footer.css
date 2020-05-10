@@ -37,6 +37,18 @@
     color: #fff;
 }
 
+.nav-title{
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 900 ;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 2px 8px black;
+    text-transform: uppercase;
+    display:block ;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
 
 /* Change navbar styling on small viewports */
 @media (max-width: 991.98px) {
@@ -200,9 +212,9 @@
 {
   background-color:#007bb6
 }
-.social-icons a.dribbble:hover
+.social-icons a.instagram:hover
 {
-  background-color:#ea4c89
+  background-color:#8b00ad
 }
 @media (max-width:767px)
 {
