@@ -8,8 +8,9 @@
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-decoration: none;
+    text-shadow: 1px 2px 10px rgb(255, 255, 255);
 }
 
 .navbar .navbar-brand {
@@ -29,8 +30,9 @@
 
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-decoration: none;
+    text-shadow: 1px 2px 10px rgb(255, 255, 255);
 }
 
 .navbar.active .navbar-brand {
