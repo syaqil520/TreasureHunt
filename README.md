@@ -1,7 +1,6 @@
 # TreasureHunt
 Web design for the treasure hunt assignment\
 
-###### HOMEPAGE - done
 
 ### Marijana
 Index.html - player Home Page\
