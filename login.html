@@ -1,0 +1,92 @@
+<!doctype html>
+<html class="login">
+   <head>
+      <meta charset="utf-8">
+      <title>LOGIN</title>
+      <link rel="stylesheet" href="css/main.css">
+	   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+	  
+      <script> 
+         var organizer = document.querySelector('#organizer')
+         var player = document.querySelector('#player')
+         setTimeout(function(){ player.checked = true}, 1000)
+         setTimeout(function(){ organizer.checked = true}, 2000)
+      </script>
+
+   </head>
+	<header></header>
+
+    <nav>
+      <img src="images/logo1.jpg" alt="HOME" height="160px" weight="160px">&nbsp;
+         <a class="cc" href="index.html">HOME</a>
+      
+         <!-- <a class="cc" href="login.html">LOGIN</a> -->
+         <a class="cc" href="signupmain.html">SIGN UP</a>
+         <h1 id="mainh1">TREASURE HUNT<br><p1 id="mainp1">“BE THE KING.”</p1></h1>
+      <br>
+    </nav>
+
+   <body class="login">
+
+	  <h1 class="logintitle">LOGIN TO CONTINUE</h1>
+	   
+      <div class="container">
+		  
+         <input id="organizer" type="radio" name="tab" checked="checked"/>
+         <input id="player" type="radio" name="tab"/>
+		  
+         <div class="pages">
+           
+			 <div class="page">
+				 
+               <div class="input">
+                  <div class="title"><i class="material-icons">&nbsp;</i>EMAIL</div>
+                  <input class="text" type="text" placeholder="" required>
+               </div>
+				 
+               <div class="input">
+                  <div class="title"><i class="material-icons">&nbsp;</i>PASSWORD</div>
+                  <input class="text" type="password" placeholder="" required>
+               </div>
+				 
+               <div class="input">
+				  <form>
+                  <button class="butlog" formaction="6)OrganiserHome - DONE.html">LOG IN</button>
+				  </form>
+               </div>
+				 
+             </div>
+            
+		     <div class="page play">
+				
+               <div class="input">
+                  <div class="title"><i class="material-icons">&nbsp;</i>EMAIL</div>
+                  <input class="text" type="text" placeholder="" required>
+               </div>
+				
+               <div class="input">
+                  <div class="title"><i class="material-icons">&nbsp;</i>PASSWORD</div>
+                  <input class="text" type="password" placeholder="" required>
+               </div>
+				
+               <div class="input">
+				   <form>
+                  <button class="butlog" formaction="11)PlayerHome - DONE.html">LOG IN</button>
+					   </form>
+               </div>
+				
+             </div>
+			 
+         </div>
+		  
+         <div class="tabs">
+            <label class="tab text" for="organizer">Organizer</label>
+            <label class="tab text" for="player">Player</label>
+         </div>
+		  
+      </div>
+	   
+   </body>
+	
+</html>
