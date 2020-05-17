@@ -1,28 +1,24 @@
 *{
-    margin: 0;
-    padding:0;
-    text-decoration: none; 
+  margin: 0;
+  padding:0;
+  text-decoration: none; 
 
-    }
+  }
 
-body {
-        /*background-color: red ;*/
-    
-    }
 
 h1 { 
-    text-align: center; 
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 50px;
-    color: #FFD37C;
-    text-shadow: 4px 2px 8px black;
+  text-align: center; 
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 50px;
+  color: #FFD37C;
+  text-shadow: 4px 2px 8px black;
 } 
 p{ 
-    font-family: 'Catamaran', sans-serif;
-    font-weight: 400 ;
-    font-size: 12 px; 
-    line-height:1.7;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 400 ;
+  font-size: 12 px; 
+  line-height:1.7;
 
 }
 
@@ -33,269 +29,516 @@ height: 100px;
 }
 
 header .header-brand{
-    font-family: 'Catamaran', sans-serif;
-    font-weight: 900 ;
-    font-size: 30px;
-    color: #111;
-    text-transform: uppercase;
-    display:block ;
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px 0;
-    
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 900 ;
+  font-size: 30px;
+  color: #111;
+  text-transform: uppercase;
+  display:block ;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+  
 }
 
-header nav ul { 
-    display: block;
-    margin: 0 auto;
-    /*will fit according to the device*/
-    width: fit-content;
-
+.navbar {
+  transition: all 0.4s;
+  background-color: #000000;
+  margin-bottom: 20px;
 }
 
+.navbar .nav-link {
+  color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-shadow: 1px 2px 10px rgb(255, 255, 255);
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+  background: #000;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 0%;
+}
+
+.navbar.active .nav-link {
+  color: #fff;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-shadow: 1px 2px 10px rgb(255, 255, 255);
+}
+
+.navbar.active .navbar-brand {
+  color: #fff;
+}
+
+.nav-title{
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 900 ;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-shadow: 4px 2px 8px black;
+  text-transform: uppercase;
+  display:block ;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+  .navbar {
+      background: #fff;
+  }
+
+  .navbar .navbar-brand, .navbar .nav-link {
+      color: #555;
+  }
+}
+
+/* header nav ul { 
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
 header nav ul li { 
-     display: inline-block; 
-      /*getting rid of spaces between Home/About/photos */
-     float: left;
-    list-style:none;
-    padding: 0 16px;   
-
+   display: inline-block; 
+   float: left;
+  list-style:none;
+  padding: 0 16px;   
 }
-
 header nav ul li a {
-
-    font-family:arial ;
-    font-size: 16 px;
-    color: #111; 
-    text-transform: uppercase;
-}
+  font-family:arial ;
+  font-size: 16 px;
+  color: #111; 
+  text-transform: uppercase;
+} */
 
 header .header-cases {
-    display: none ;
+  display: none ;
 }
 
-  @media only screen and (min-width: 1000px) {
-        header .header-brand{
-            margin: 31px 0;
-            text-align: left;
-            line-height: 38px;
-            padding: 0px 20px 0px 40px;
-            border-right: 3px solid #111;
-            float: left;
-        }
-    
-        header nav ul  { 
-            
-            margin: 20px 0px 0 px 20px;
-            float: left;
-         }
-        
-        header nav ul li {
-            display: inline-block; 
-            float: left;
-            list-style:none;
-            padding: 0 16px;
-            
-        }
-    
-        header nav ul li a {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 16px;
-        color: #111;
-        line-height: 100px;
+@media only screen and (min-width: 1000px) {
+      header .header-brand{
+          margin: 31px 0;
+          text-align: left;
+          line-height: 38px;
+          padding: 0px 20px 0px 40px;
+          border-right: 3px solid #111;
+          float: left;
+      }
+  
+      /* header nav ul  { 
+          
+          margin: 20px 0px 0 px 20px;
+          float: left;
+       }
+      
+      header nav ul li {
+          display: inline-block; 
+          float: left;
+          list-style:none;
+          padding: 0 16px;
+          
+      }
+  
+      header nav ul li a {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      color: #111;
+      line-height: 100px;
+      }  */
 
-        } 
- 
-        header .header-cases {
-            display: block ;
-            font-family:arial ;
-            font-size: 16 px;
-            color: #111; 
-            text-transform: uppercase;   
-            line-height: 40px;
-            border: 1px solid #111;
-            float: right;
-            margin-right: 40px;
-            padding: 0 20px;
-            
-        }
-         
-    }   
+      header .header-cases {
+          display: block ;
+          font-family:arial ;
+          font-size: 16 px;
+          color: #111; 
+          text-transform: uppercase;   
+          line-height: 40px;
+          border: 1px solid #111;
+          float: right;
+          margin-right: 40px;
+          padding: 0 20px;
+          
+      }
+       
+  }   
 
-    /*INDEX*/
+  /*INDEX*/
 
-    .index-banner{
-        width: 100%; 
-  /* vh means that it is gong to be the entire height of the device but even with that our screen is going to run out as we have header which s 100px, so we will calculate to adjust */     
-        /*height:calc (100vh-100px);
-   this for some reason does not work cuts my screen all short (to check later)*/ 
-        height: 85vh;
-        background-image: url("../img/indi1.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        display:table
-    }
+  .index-banner{
+      width: 100%; 
+/* vh means that it is gong to be the entire height of the device but even with that our screen is going to run out as we have header which s 100px, so we will calculate to adjust */     
+      /*height:calc (100vh-100px);
+ this for some reason does not work cuts my screen all short (to check later)*/ 
+      height: 85vh;
+      background-image: url("../img/indi1.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display:table
+  }
 
 
-    .index-banner1{
-        width: 100%; 
-        height: 85vh;
-        background-image: url("../img/blackbeard.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        display:table
-    }
-    .index-banner2{
-        width: 100%; 
-        height: 85vh;
-        background-image: url("../img/adventure.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        display:table}
+  .index-banner1{
+      width: 100%; 
+      height: 85vh;
+      background-image: url("../img/blackbeard.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display:table
+  }
+  .index-banner2{
+      width: 100%; 
+      height: 85vh;
+      background-image: url("../img/adventure.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display:table}
 
-    .index-banner3{
+  .index-banner3{
+          width: 100%; 
+          height: 85vh;
+          background-image: url("../img/teamwork.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          display:table}   
+
+
+          .index-banner4{
             width: 100%; 
             height: 85vh;
-            background-image: url("../img/teamwork.jpg");
+            background-image: url("../img/rules.jpg");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            display:table}   
+            display:table}  
+
+
 
 /* =centers my text vertically on the line and is related to display table in  my banner , index -banner*/
-    .vertical-center{  
-        display: table-cell;
-        vertical-align: middle;
-    }
+  .vertical-center{  
+      display: table-cell;
+      vertical-align: middle;
+  }
 
-    .index-banner h1{
-        font-family: 'Catamaran', sans-serif;
-        font-size: 75px;
-        font-weight: 900;
-        line-height: 70px;
-        color: #fff; 
-        text-align: center;
-        /*text shaddow is when i have for example white letteres on white surface....8 px is blurring when now it is too strong */
-        text-shadow: 2px 2px 8px  #111;
-      
-    }
 
-    .index-banner h2{
-        font-family: 'Catamaran', sans-serif;
-        font-size: 30 px;
-        font-weight: 900;
-        line-height: 40px;
-        font-style: italic;
-        color: #fff; 
-        text-align: center;
-        text-shadow: 2px 2px 8px  #111;
-      
-    }
-
-    .index-links div{
-        margin :  16px 16px  0;
-        width: calc(100%-32px);
-        height: 100px;
-        background-color:#f2f2f2;
-
-    }
-    .index-links h3{
-        font-family:arial ;
-        font-size: 28 px;
-        font-weight: 600;
-        line-height: 100px;
-        color: #111; 
-        text-align: center;
-        text-transform: uppercase;
-       
+  .index-banner h1{
+      font-family: 'Catamaran', sans-serif;
+      font-size: 75px;
+      font-weight: 900;
+      line-height: 70px;
+      color: #fff; 
+      text-align: center;
+      /*text shaddow is when i have for example white letteres on white surface....8 px is blurring when now it is too strong */
+      text-shadow: 2px 2px 8px  #111;
     
-    }
-   @media only screen and (min-width: 1000px) {
-        
-        .wrapper {
-            width: 1000px;
-            margin: 0 auto;
-        }
-        
-        .index-banner{
-           
-            height: 500px;
-        
-        } 
-        .index-links div{
-            margin :  10px 10px  0;
-            width: calc(100%-32px);
-            height: 100px;
-            background-color:#f2f2f2;
+  }
 
-        }
+  .index-banner h2{
+      font-family: 'Catamaran', sans-serif;
+      font-size: 30 px;
+      font-weight: 900;
+      line-height: 40px;
+      font-style: italic;
+      color: #fff; 
+      text-align: center;
+      text-shadow: 2px 2px 8px  #111;
+    
+  }
 
-       /*.index-boxlink-square{ 
-             /*important is a commande that overrides all other comandes so new width will rule  :) 
-            width: calc(25%-60px) !important;}
-            NOT WORKING TO CHECK !!*/
+  .index-links div{
+      margin :  16px 16px  0;
+      width: calc(100%-32px);
+      height: 100px;
+      background-color:#f2f2f2;
 
-    }  
-    /*FOOTER*/
-
-    footer {
-        width: calc( 100%-80px);
-        padding: 40px 40px;
-        margin-top: 20px;
-        background-color: #f111;
-        overflow: hidden;
-    }
+  }
+  .index-links h3{
+      font-family:arial ;
+      font-size: 28 px;
+      font-weight: 600;
+      line-height: 100px;
+      color: #111; 
+      text-align: center;
+      text-transform: uppercase;
      
-    footer ul{
-        width: fit-content;
-        float: left ;
-        padding-left: 20px;
+  
+  }
+ @media only screen and (min-width: 1000px) {
+      
+      .wrapper {
+          width: 1000px;
+          margin: 0 auto;
+      }
+      
+      .index-banner{
+         
+          height: 500px;
+      
+      } 
+      .index-links div{
+          margin :  10px 10px  0;
+          width: calc(100%-32px);
+          height: 100px;
+          background-color:#f2f2f2;
 
+      }
+
+     /*.index-boxlink-square{ 
+           /*important is a commande that overrides all other comandes so new width will rule  :) 
+          width: calc(25%-60px) !important;}
+          NOT WORKING TO CHECK !!*/
+
+  }  
+  /*FOOTER*/
+  .site-footer
+  {
+    background-color:#000000;
+    padding:45px 0 20px;
+    font-size:15px;
+    line-height:24px;
+    color: aliceblue;
+  }
+  .site-footer hr
+  {
+    border-top-color:#bbb;
+    opacity:0.5
+  }
+  .site-footer hr.small
+  {
+    margin:20px 0
+  }
+  .site-footer h6
+  {
+    color:#fff;
+    font-size:16px;
+    text-transform:uppercase;
+    margin-top:5px;
+    letter-spacing:2px
+  }
+  .site-footer a
+  {
+    color: aliceblue;
+  }
+  .site-footer a:hover
+  {
+    color:#3366cc;
+    text-decoration:none;
+  }
+  .footer-links
+  {
+    padding-left:0;
+    list-style:none
+  }
+  .footer-links li
+  {
+    display:block
+  }
+  .footer-links a
+  {
+    color: aliceblue;
+  }
+  .footer-links a:active,.footer-links a:focus,.footer-links a:hover
+  {
+    color:#3366cc;
+    text-decoration:none;
+  }
+  .footer-links.inline li
+  {
+    display:inline-block
+  }
+  .site-footer .social-icons
+  {
+    text-align:right
+  }
+  .site-footer .social-icons a
+  {
+    width:40px;
+    height:40px;
+    line-height:40px;
+    margin-left:6px;
+    margin-right:0;
+    border-radius:100%;
+    background-color:#33353d
+  }
+  .copyright-text
+  {
+    margin:0
+  }
+  @media (max-width:991px)
+  {
+    .site-footer [class^=col-]
+    {
+      margin-bottom:30px
     }
-    footer ul li{
-        display: block;    
-        list-style:none;
-        line-height: 20 px;
-       
+  }
+  @media (max-width:767px)
+  {
+    .site-footer
+    {
+      padding-bottom:0
     }
-
-    footer ul li a{
-        font-family:arial ;
-        font-size: 24 px;
-        color: fff; 
-        line-height: 40px;
-        text-decoration: underline;
-        
+    .site-footer .copyright-text,.site-footer .social-icons
+    {
+      text-align:center
     }
-
-    .footer-social-media{
-        padding: 30px;
-        display: inline-block;
-        margin-top: 40px;
-        float: right;
-
+  }
+  .social-icons
+  {
+    padding-left:0;
+    margin-bottom:0;
+    list-style:none
+  }
+  .social-icons li
+  {
+    display:inline-block;
+    margin-bottom:4px
+  }
+  .social-icons li.title
+  {
+    margin-right:15px;
+    text-transform:uppercase;
+    color:#96a2b2;
+    font-weight:700;
+    font-size:13px
+  }
+  .social-icons a{
+    background-color:#eceeef;
+    color: aliceblue;
+    font-size:16px;
+    display:inline-block;
+    line-height:44px;
+    width:44px;
+    height:44px;
+    text-align:center;
+    margin-right:8px;
+    border-radius:100%;
+    -webkit-transition:all .2s linear;
+    -o-transition:all .2s linear;
+    transition:all .2s linear
+  }
+  .social-icons a:active,.social-icons a:focus,.social-icons a:hover
+  {
+    color:#fff;
+    background-color:#29aafe
+  }
+  .social-icons.size-sm a
+  {
+    line-height:34px;
+    height:34px;
+    width:34px;
+    font-size:14px
+  }
+  .social-icons a.facebook:hover
+  {
+    background-color:#3b5998
+  }
+  .social-icons a.twitter:hover
+  {
+    background-color:#00aced
+  }
+  .social-icons a.linkedin:hover
+  {
+    background-color:#007bb6
+  }
+  .social-icons a.instagram:hover
+  {
+    background-color:#8b00ad
+  }
+  @media (max-width:767px)
+  {
+    .social-icons li.title
+    {
+      display:block;
+      margin-right:0;
+      font-weight:600
     }
-    
-    
-.btn {
-    
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 24;
-    width: 400px;
-    height: 80px;
-    background-color: #f2f2f2;
-    border-radius:  20px;
-    border : 2px solid darkgray;
-
-
+  }
+  /* footer {
+      width: calc( 100%-80px);
+      padding: 40px 40px;
+      margin-top: 20px;
+      background-color: #f111;
+      overflow: hidden;
+  }
+   
+  footer ul{
+      width: fit-content;
+      float: left ;
+      padding-left: 20px;
+  }
+  footer ul li{
+      display: block;    
+      list-style:none;
+      line-height: 20 px;
+     
+  }
+  footer ul li a{
+      font-family:arial ;
+      font-size: 24 px;
+      color: fff; 
+      line-height: 40px;
+      text-decoration: underline;
+      
+  }
+  .footer-social-media{
+      padding: 30px;
+      display: inline-block;
+      margin-top: 40px;
+      float: right;
+  } */
+  
+  
+/*.btn {
+  
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 24;
+  width: 400px;
+  height: 80px;
+  background-color: #f2f2f2;
+  border-radius:  20px;
+  border : 2px solid darkgray;
 }
- 
-.btn hover:{
 
+.modal {
+position: fixed;
+top 50%; 
+left: 50%; 
+transform: translate (-50%, -50%);
+border: 1 pix solid black ;
+border-radius: 10 px;
+z-index: 10; 
+background-color: white;
+width: 500px;
+max-width 80%; 
 }
- 
- 
-    
+.modal-header{
+padding: : 10 px 15 px;
+display: flex ;
+justify-content: space-between;
+align-items: center;
+border-bottom: 1 px solid black;
+}
+.modal-header .title {
+font-size: 1.25rem;
+font-weight: bold;
+}
+*/

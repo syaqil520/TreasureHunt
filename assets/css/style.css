@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   background: #fff;
@@ -124,6 +127,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #header #logo {
   float: left;
+  padding-left: 16px;
+  margin-left: auto;
 }
 
 @media (min-width: 1024px) {
@@ -133,19 +138,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header #logo h1 {
-  font-size: 34px;
+  font-size: 16px;
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 1000;
+  text-shadow: 4px 2px 8px black;
   letter-spacing: 3px;
+  padding-left: 15px;
 }
 
 #header #logo h1 a, #header #logo h1 a:hover {
   color: #fff;
   padding-left: 10px;
-  border-left: 4px solid #18d26e;
 }
 
 #header #logo img {
@@ -1386,160 +1392,166 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-#footer {
-  background: #000;
-  padding: 0 0 30px 0;
-  color: #eee;
-  font-size: 14px;
+.site-footer
+{
+  background-color:#000000;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color: aliceblue;
 }
-
-#footer .footer-top {
-  background: #111;
-  padding: 60px 0 30px 0;
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
 }
-
-#footer .footer-top .footer-info {
-  margin-bottom: 30px;
+.site-footer hr.small
+{
+  margin:20px 0
 }
-
-#footer .footer-top .footer-info h3 {
-  font-size: 34px;
-  margin: 0 0 20px 0;
-  padding: 2px 0 2px 10px;
-  line-height: 1;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  letter-spacing: 3px;
-  border-left: 4px solid #18d26e;
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
 }
-
-#footer .footer-top .footer-info p {
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 0;
-  font-family: "Montserrat", sans-serif;
-  color: #eee;
+.site-footer a
+{
+  color: aliceblue;
 }
-
-#footer .footer-top .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #333;
-  color: #eee;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
 }
-
-#footer .footer-top .social-links a:hover {
-  background: #18d26e;
-  color: #fff;
+.footer-links
+{
+  padding-left:0;
+  list-style:none
 }
-
-#footer .footer-top h4 {
-  font-size: 14px;
-  font-weight: bold;
-  color: #fff;
-  text-transform: uppercase;
-  position: relative;
-  padding-bottom: 12px;
+.footer-links li
+{
+  display:block
 }
-
-#footer .footer-top h4::before, #footer .footer-top h4::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
+.footer-links a
+{
+  color: aliceblue;
 }
-
-#footer .footer-top h4::before {
-  right: 0;
-  background: #555;
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
 }
-
-#footer .footer-top h4::after {
-  background: #18d26e;
-  width: 60px;
+.footer-links.inline li
+{
+  display:inline-block
 }
-
-#footer .footer-top .footer-links {
-  margin-bottom: 30px;
+.site-footer .social-icons
+{
+  text-align:right
 }
-
-#footer .footer-top .footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
 }
-
-#footer .footer-top .footer-links ul i {
-  padding-right: 8px;
-  color: #ddd;
+.copyright-text
+{
+  margin:0
 }
-
-#footer .footer-top .footer-links ul li {
-  border-bottom: 1px solid #333;
-  padding: 10px 0;
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
 }
-
-#footer .footer-top .footer-links ul li:first-child {
-  padding-top: 0;
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
 }
-
-#footer .footer-top .footer-links ul a {
-  color: #eee;
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
 }
-
-#footer .footer-top .footer-links ul a:hover {
-  color: #18d26e;
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
 }
-
-#footer .footer-top .footer-contact {
-  margin-bottom: 30px;
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
 }
-
-#footer .footer-top .footer-contact p {
-  line-height: 26px;
+.social-icons a{
+  background-color:#eceeef;
+  color: aliceblue;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
 }
-
-#footer .footer-top .footer-newsletter {
-  margin-bottom: 30px;
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
 }
-
-#footer .footer-top .footer-newsletter input[type="email"] {
-  border: 0;
-  padding: 6px 8px;
-  width: 65%;
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
 }
-
-#footer .footer-top .footer-newsletter input[type="submit"] {
-  background: #18d26e;
-  border: 0;
-  width: 35%;
-  padding: 6px 0;
-  text-align: center;
-  color: #fff;
-  transition: 0.3s;
-  cursor: pointer;
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
 }
-
-#footer .footer-top .footer-newsletter input[type="submit"]:hover {
-  background: #13a456;
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
 }
-
-#footer .copyright {
-  text-align: center;
-  padding-top: 30px;
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
 }
-
-#footer .credits {
-  text-align: center;
-  font-size: 13px;
-  color: #ddd;
+.social-icons a.instagram:hover
+{
+  background-color:#8b00ad
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
 }

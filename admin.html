@@ -22,10 +22,11 @@
             
             <div id="navbarSupportedContent" class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="#body" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item active"><a href="admin.html" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
                     <li class="nav-item"><a href="#yourGame" class="nav-link text-uppercase font-weight-bold">Your Game</a></li>
-                    <li class="nav-item"><a href="profile.html" class="nav-link text-uppercase font-weight-bold"><i style="font-size: x-large;" class="fa fa-user"></i></a></li>
-                    <li class="nav-item"><a href="homePage.html" class="nav-link text-uppercase font-weight-bold">Log Out</a></li>
+                    <li class="nav-item"><a href="Adminprofile.html" class="nav-link text-uppercase font-weight-bold">Mr. Jason</a></li>
+               
+                <li class="nav-item"><a href="index.html" class="nav-link text-uppercase font-weight-bold">Logout</a>
                 </ul>
             </div>
         </div>
@@ -33,22 +34,13 @@
     <!-- end Navigator -->
 
 <!-- carousel -->
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouseladmin" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouseladmin" data-slide-to="0" class="active"></li>
+    <li data-target="#carouseladmin" data-slide-to="1"></li>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="img/pirate4.jpg" alt="First slide">
-      <div class="carousel-caption d-none d-lg-block">
-        <h1>News!</h1>
-        <p>Your game: xx Have reach maximum participants.</p>
-        <p><a href="#yourGame" class="btn btn-light">Go</a></p>
-      </div>
-    </div>
-    <div class="carousel-item">
       <img class="d-block w-100" src="img/pirate5.jpg" alt="Second slide">
       <div class="carousel-caption d-none d-lg-block">
         <h1>Awards!</h1>
@@ -65,11 +57,11 @@
       </div>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+  <a class="carousel-control-prev" href="#carouseladmin" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+  <a class="carousel-control-next" href="#carouseladmin" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
@@ -97,88 +89,86 @@
     <div class="px-5 mx-5">
     <!-- card -->
   <div class="container">
+<!-- Game 1 -->
+<div class="game-card shadow mb-5">
+  <div class="row">
+    
+    <div class="col-5 p-0">
+      <img src="img/pirate2.jpg" class="img-fluid">
+    </div>
 
-      <div class="game-card shadow mb-5">
-        <div class="row">
-          
-          <div class="col-5 p-0">
-            <img src="img/pirate1.jpg" class="img-fluid">
-          </div>
+    <div class="col-7">
 
-          <div class="col-7">
+      <h1 class="font-weight-bold text-center" style="font-size:50px;">Blackbeard</h1>            
 
-            <h1 class="font-weight-bold text-center" style="font-size:50px;">Asari</h1>            
-
-            <div class="text-center">
-              <a href="game.html" type="button" class="btn btn-dark btn-sx" style="font-size: xx-small;">Detail</a>
-              <a href="UpdateGame.html" type="button" class="btn btn-dark btn-sx" style="font-size: xx-small;">Update</a>
-              <a id="delete-game" type="button" data-toggle="modal" data-target="#confirm-remove-modal" style="font-size: xx-small;" class="btn btn-dark btn-sx text-light">Delete</a>
-            </div>
-            
-            <div class="row " >
-              <div class="col">
-                <p class="card-desc">
-                  <span style="font-weight: bold;">Description:</span>
-                  <br>
-                  Blackbeard, was one of history’s most famous pirates He was born Edward Teach (Thatch or Thack) -though we'll never be sure of his real name as it was pirate custom at the time was to use a pseudonym when engaging in acts of piracy, circa 1680 in England & died in 1718 in US. Little we know of Blackbeard’s early life, and his origins have been left to speculation. He seemed to have been active as a privateer for the British during the War of the Spanish Succession (1701–13) before engaging in the profession he is most famous for. Blackbeard was first heard of as a pirate late in 1716 and soon became notorious for outrages along the Virginia and Carolina coasts and in the Caribbean Sea. Apart from the luxuriant black beard which earned him his nickname, the most prominent aspect of the Blackbeard legend is his great buried treasure, which has never been found and probably never existed.</p>
-              </div>
-            
-            </div>
-
-            <div class="text-center row card-tag">
-              <div class="col">
-                <p class="btn btn-dark btn-sx" style="font-size: xx-small;">Date	:	21/1/2020 </p>
-                <p class="btn btn-dark btn-sx" style="font-size: xx-small;"> Time		:	XX:XX</p>
-                <p class="btn btn-dark btn-sx" style="font-size: xx-small;">Fee	:	RMX</p>
-              </div>
-            </div>
-
-          </div> 
+      <div class="text-center">
+        <a href="gameDetail.html" type="button" class="btn btn-dark btn-sx" style="font-size: xx-small;">Detail</a>
+        <a id="delete-game" type="button" data-toggle="modal" data-target="#confirm-remove-modal" style="font-size: xx-small;" class="btn btn-dark btn-sx text-light">Delete</a>
+      </div>
       
+      <div class="row " >
+        <div class="col">
+          <p class="card-desc">
+            <span style="font-weight: bold;">Description:</span>
+            <br>
+            Blackbeard, was one of history’s most famous pirates He was born Edward Teach (Thatch or Thack) -though we'll never be sure of his real name as it was pirate custom at the time was to use a pseudonym when engaging in acts of piracy, circa 1680 in England & died in 1718 in US. Little we know of Blackbeard’s early life, and his origins have been left to speculation. He seemed to have been active as a privateer for the British during the War of the Spanish Succession (1701–13) before engaging in the profession he is most famous for. Blackbeard was first heard of as a pirate late in 1716 and soon became notorious for outrages along the Virginia and Carolina coasts and in the Caribbean Sea. Apart from the luxuriant black beard which earned him his nickname, the most prominent aspect of the Blackbeard legend is his great buried treasure, which has never been found and probably never existed.</p>
+        </div>
+      
+      </div>
 
+      <div class="text-center row card-tag">
+        <div class="col">
+          <p class="btn btn-dark btn-sx" style="font-size: xx-small;">Date	:	21/1/2021 </p>
+          <p class="btn btn-dark btn-sx" style="font-size: xx-small;"> Time		:	10:10 A.M.</p>
+          <p class="btn btn-dark btn-sx" style="font-size: xx-small;">Fee	:	RM30 per team</p>
         </div>
       </div>
 
-      <div class="game-card shadow mb-5">
-        <div class="row">
-          
-          <div class="col-5 p-0">
-            <img src="img/pirate1.jpg" class="img-fluid">
-          </div>
+    </div> 
 
-          <div class="col-7">
 
-            <h1 class="font-weight-bold text-center" style="font-size:50px;">Asari</h1>            
+  </div>
+</div>
+<!-- game 2 -->
+<div class="game-card shadow mb-5">
+  <div class="row">
+    
+    <div class="col-5 p-0">
+      <img src="img/pirate1.jpg" class="img-fluid">
+    </div>
 
-            <div class="text-center">
-              <a href="game.html" type="button" class="btn btn-dark btn-sx" style="font-size: xx-small;">Detail</a>
-              <a href="UpdateGame.html" type="button" class="btn btn-dark btn-sx" style="font-size: xx-small;">Update</a>
-              <a id="delete-game" type="button" data-toggle="modal" data-target="#confirm-remove-modal" style="font-size: xx-small;" class="btn btn-dark btn-sx text-light">Delete</a>
-            </div>
-            
-            <div class="row " >
-              <div class="col">
-                <p class="card-desc">
-                  <span style="font-weight: bold;">Description:</span>
-                  <br>
-                  Blackbeard, was one of history’s most famous pirates He was born Edward Teach (Thatch or Thack) -though we'll never be sure of his real name as it was pirate custom at the time was to use a pseudonym when engaging in acts of piracy, circa 1680 in England & died in 1718 in US. Little we know of Blackbeard’s early life, and his origins have been left to speculation. He seemed to have been active as a privateer for the British during the War of the Spanish Succession (1701–13) before engaging in the profession he is most famous for. Blackbeard was first heard of as a pirate late in 1716 and soon became notorious for outrages along the Virginia and Carolina coasts and in the Caribbean Sea. Apart from the luxuriant black beard which earned him his nickname, the most prominent aspect of the Blackbeard legend is his great buried treasure, which has never been found and probably never existed.</p>
-              </div>
-            
-            </div>
+    <div class="col-7">
 
-            <div class="text-center row card-tag">
-              <div class="col">
-                <p class="btn btn-dark btn-sx" style="font-size: xx-small;">Date	:	21/1/2020 </p>
-                <p class="btn btn-dark btn-sx" style="font-size: xx-small;"> Time		:	XX:XX</p>
-                <p class="btn btn-dark btn-sx" style="font-size: xx-small;">Fee	:	RMX</p>
-              </div>
-            </div>
+      <h1 class="font-weight-bold text-center" style="font-size:50px;">Jack Sparrow</h1>            
 
-          </div> 
+      <div class="text-center">
+        <a href="gameDetail.html" type="button" class="btn btn-dark btn-sx" style="font-size: xx-small;">Detail</a>
+        <a id="delete-game" type="button" data-toggle="modal" data-target="#confirm-remove-modal" style="font-size: xx-small;" class="btn btn-dark btn-sx text-light">Delete</a>
+      </div>
       
+      <div class="row " >
+        <div class="col">
+          <p class="card-desc">
+            <span style="font-weight: bold;">Description:</span>
+            <br>
+            While little is known about his early life, a pamphlet written by a fellow sailor, as well as numerous songs and ballads, offer a glimpse into his life, his mannerisms and physical appearance. According to limited historical sources, James Ward was born around the year 1553 in Faversham, Kent in southeast England and earned a living working in local fisheries. Faversham was a haven for smugglers and pirates, and Ward somehow developed a passion for sailing, leaving his home in Faversham to secure a job as a privateer licensed by the Queen of England. At the time, England's invasion attempt against the Spanish Armada had recently failed. When the war came to an end, so did the duties of the privateers, though most of them did not want to leave their livelihoods of plunder.</p>
+        </div>
+      
+      </div>
 
+      <div class="text-center row card-tag">
+        <div class="col">
+          <p class="btn btn-dark btn-sx" style="font-size: xx-small;">Date	:	21/6/2021 </p>
+          <p class="btn btn-dark btn-sx" style="font-size: xx-small;"> Time		:	8:30 A.M.</p>
+          <p class="btn btn-dark btn-sx" style="font-size: xx-small;">Fee	:	RM15 per team</p>
         </div>
       </div>
+
+    </div> 
+
+
+  </div>
+</div>
   </div>
       
     </div>
@@ -187,141 +177,109 @@
 
 
   <!-- Game List Section -->
-<div id="game-list-organizer">
+  <div id="game-list-organizer">
 
-  <div class="container">
-    <div class="section-title text-center center">
-      <h2>Game</h2>
-      <hr>
-    </div>
-
-
-    <table class="table table-striped table-dark">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Title</th>
-          <th scope="col">Venue</th>
-          <th scope="col">Date</th>
-          <th scope="col">Time</th>
-          <th scope="col">Fee</th>
-          <th scope="col">Restiration due date</th>
-          <th scope="col">Participant</th>
-          <th scope="col">Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Asari</td>
-          <td>Normandy</td>
-          <td>2 Feb 2020</td>
-          <td>10 A.M.</td>
-          <td>RM20</td>
-          <td>13 Feb 2020</td>
-          <td>5/12</td>
-          <td class="text-center"><a href="#" class="btn btn-dark text-light">Click Here</a></td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Asari</td>
-          <td>Normandy</td>
-          <td>2 Feb 2020</td>
-          <td>10 A.M.</td>
-          <td>RM20</td>
-          <td>13 Feb 2020</td>
-          <td>5/12</td>
-          <td class="text-center"><a href="#" class="btn btn-dark text-light">Click Here</a></td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Asari</td>
-          <td>Normandy</td>
-          <td>2 Feb 2020</td>
-          <td>10 A.M.</td>
-          <td>RM20</td>
-          <td>13 Feb 2020</td>
-          <td>5/12</td>
-          <td class="text-center"><a href="#" class="btn btn-dark text-light">Click Here</a></td>
-        </tr>
-        <tr>
-          <th scope="row">1</th>
-          <td>Asari</td>
-          <td>Normandy</td>
-          <td>2 Feb 2020</td>
-          <td>10 A.M.</td>
-          <td>RM20</td>
-          <td>13 Feb 2020</td>
-          <td>5/12</td>
-          <td class="text-center"><a href="#" class="btn btn-dark text-light">Click Here</a></td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Asari</td>
-          <td>Normandy</td>
-          <td>2 Feb 2020</td>
-          <td>10 A.M.</td>
-          <td>RM20</td>
-          <td>13 Feb 2020</td>
-          <td>5/12</td>
-          <td class="text-center"><a href="#" class="btn btn-dark text-light">Click Here</a></td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Asari</td>
-          <td>Normandy</td>
-          <td>2 Feb 2020</td>
-          <td>10 A.M.</td>
-          <td>RM20</td>
-          <td>13 Feb 2020</td>
-          <td>5/12</td>
-          <td class="text-center"><a href="#" class="btn btn-dark text-light">Click Here</a></td>
-        </tr>
-        <tr>
-          <th scope="row">1</th>
-          <td>Asari</td>
-          <td>Normandy</td>
-          <td>2 Feb 2020</td>
-          <td>10 A.M.</td>
-          <td>RM20</td>
-          <td>13 Feb 2020</td>
-          <td>5/12</td>
-          <td class="text-center"><a href="#" class="btn btn-dark text-light">Click Here</a></td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Asari</td>
-          <td>Normandy</td>
-          <td>2 Feb 2020</td>
-          <td>10 A.M.</td>
-          <td>RM20</td>
-          <td>13 Feb 2020</td>
-          <td>5/12</td>
-          <td class="text-center"><a href="#" class="btn btn-dark text-light">Click Here</a></td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Asari</td>
-          <td>Normandy</td>
-          <td>2 Feb 2020</td>
-          <td>10 A.M.</td>
-          <td>RM20</td>
-          <td>13 Feb 2020</td>
-          <td>5/12</td>
-          <td class="text-center"><a href="#" class="btn btn-dark text-light">Click Here</a></td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="container">
+      <div class="section-title text-center center">
+        <h2>Game</h2>
+        <hr>
+      </div>
   
-
+  
+      <table class="table table-striped table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Venue</th>
+            <th scope="col">Date</th>
+            <th scope="col">Time</th>
+            <th scope="col">Fee</th>
+            <th scope="col">Registeration due date</th>
+            <th scope="col">Participant</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Blackbeard</td>
+            <td>Nami Island</td>
+            <td>21 Jan 2021</td>
+            <td>10 A.M.</td>
+            <td>RM30 per team</td>
+            <td>13 Jan 2021</td>
+            <td>5/12</td>
+            <td class="text-center"><a href="gameDetailreadOnly.html" class="btn btn-dark text-light">Click Here</a></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jack Sparrow</td>
+            <td>Kuala Lumpur</td>
+            <td>21 June 2021</td>
+            <td>8:30 A.M.</td>
+            <td>RM15 per team</td>
+            <td>28 May 2020</td>
+            <td>3/12</td>
+            <td class="text-center"><a href="gameDetailreadOnly.html" class="btn btn-dark text-light">Click Here</a></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Onami Gold</td>
+            <td>Melaka</td>
+            <td>2 May 2020</td>
+            <td>10 A.M.</td>
+            <td>RM20 per team</td>
+            <td>13 June 2020</td>
+            <td>9/10</td>
+            <td class="text-center"><a href="gameDetailreadOnly.html" class="btn btn-dark text-light">Click Here</a></td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Drake Rake</td>
+            <td>Taman TTDI</td>
+            <td>22 Feb 2020</td>
+            <td>10 A.M.</td>
+            <td>RM20</td>
+            <td>13 Feb 2020</td>
+            <td>8/8 (Full)</td>
+            <td class="text-center"><a href="gameDetailreadOnly.html" class="btn btn-dark text-light">Click Here</a></td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Escape de Rea</td>
+            <td>Tasik Varsiti</td>
+            <td>2 Feb 2020</td>
+            <td>10 A.M.</td>
+            <td>RM22 per team</td>
+            <td>13 January 2020</td>
+            <td>7/15</td>
+            <td class="text-center"><a href="gameDetailreadOnly.html" class="btn btn-dark text-light">Click Here</a></td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Thousand Sunny</td>
+            <td>East Blue</td>
+            <td>17 August 2020</td>
+            <td>10 A.M.</td>
+            <td>RM25 per person</td>
+            <td>13 July 2020</td>
+            <td>20/22</td>
+            <td class="text-center"><a href="gameDetailreadOnly.html" class="btn btn-dark text-light">Click Here</a></td>
+          </tr>
+        </tbody>
+      </table>
+    
+  
+    </div>
+  
   </div>
-
-</div>
 
 </main>
 
-<!-- Site footer -->
+<!-- ======= Footer ======= -->
 <footer class="site-footer">
+    
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-6">
@@ -332,16 +290,18 @@
       <div class="col-xs-6 col-md-3">
         <h6>Tag</h6>
         <ul class="footer-links">
-          <li><a href="#hunter">Hunter</a></li>
-          <li><a href="#organizer">Organizer</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#team">Our Team</a></li>
+          <li><a href="index.html#contact">Contact Us</a></li>
+
         </ul>
       </div>
 
       <div class="col-xs-6 col-md-3">
         <h6>Quick Links</h6>
         <ul class="footer-links">
-          <li><a href="#">Log Out</a></li>
-          <li><a href="#about">About Us</a></li>
+          <li><a href="player.html">Home</a></li>
+          <li><a href="index.html">Logout</a></li>
         </ul>
       </div>
     </div>
@@ -360,13 +320,13 @@
         <ul class="social-icons">
           <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
           <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
-          <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>  
         </ul>
       </div>
     </div>
   </div>
-</footer>
+</footer><!-- End Footer -->
+
 
 <!-- Modal -->
 <div class="modal fade" id="confirm-remove-modal" tabindex="-1" role="dialog" aria-labelledby="confirm-remove-modal" aria-hidden="true">
@@ -398,7 +358,6 @@
 
     <script
     src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script> -->
     <script
     src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>

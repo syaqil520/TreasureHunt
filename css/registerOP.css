@@ -22,7 +22,7 @@ nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
 img{max-width:100%;}
 /*end reset*/
 body{
-	background:url( "images/loginbgold.jpg")  no-repeat center fixed;
+	background:url( "../img/loginbgold.jpg")  no-repeat center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -65,12 +65,12 @@ body{
 	border: 1px solid rgba(0, 0, 0, 0.37);
 	box-shadow: 0px 4px 10px 0px rgba(1, 3, 12, 0.33);
 	-webkit-box-shadow: 0px 4px 10px 0px rgba(1, 3, 12, 0.33);
-	-o-	box-shadow: 0px 4px 10px 0px rgba(1, 3, 12, 0.33);
+	-o-box-shadow: 0px 4px 10px 0px rgba(1, 3, 12, 0.33);
 	-moz-box-shadow: 0px 4px 10px 0px rgba(1, 3, 12, 0.33);
 	position: relative;
 }
 .Regisration-head span{
-	background: url(../images/user-icon.png) no-repeat -5px -6px;
+	background: url("../img/user-icon.png") no-repeat -5px -6px;
 	position: absolute;
 	top: 28%;
 	left: 25%;
@@ -127,7 +127,7 @@ body{
 	-moz-box-shadow: 0 0 1em #56AF00;
 }
 form span{
-	background: url(../images/tick.png) no-repeat -1px -2px;
+	background: url("../img/tick.png") no-repeat -1px -2px;
 	position: absolute;
 	top: -4%;
 	right: -12%;
@@ -176,7 +176,7 @@ form span{
 	-webkit-transition: opacity 0.1s;
 }
 .p-container .checkbox input + i:after {
-	content: url(../images/ch-tick.png) no-repeat 7px 1px;
+	content: url("../img/ch-tick.png") no-repeat 7px 1px;
 	top: -2px;
 	left: -2px;
 	width: 15px;
@@ -233,7 +233,7 @@ form span{
 	color: #2da5da;
 }
 .p-container .checkbox input:checked + i,
-.p-container . input:checked + i {
+.p-container .input:checked + i {
 	border-color: #2da5da;	
 }
 .p-container .rating input:checked ~ label {
@@ -323,7 +323,7 @@ form span{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6633', endColorstr='#ff6633',GradientType=1 );
 }
 .checkbox-grid .green .radio:hover i,.checkbox-grid .radio .green input:checked + i, .green input:focus + i {
-	content: url(../images/dot.png) no-repeat 7px 1px;
+	content: url("../img/dot.png") no-repeat 7px 1px;
 	height:18px;
 	width:18px;
 }
@@ -555,9 +555,17 @@ right: -12%;
 	}
 }
 
+nav
+{
+  background-image: url("../img/logincontainer.jpg"); 
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: black;
+}
+
 #mainheader
 		{
-			background-image: url("images/logincontainer.jpg"); width: auto;
+			background-image: url("../img/logincontainer.jpg"); width: auto;
 			-webkit-text-fill-color: white;
             -webkit-text-stroke-width: 0.2px;
             -webkit-text-stroke-color: black;

@@ -2,7 +2,7 @@
 /* ---------------------------------------------------------------------NAV ------------------------------------------------------------------------ */
 nav
 {
-  background-image: url("images/logincontainer.jpg"); 
+  background-image: url("../img/logincontainer.jpg"); 
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 0.2px;
   -webkit-text-stroke-color: black;
@@ -36,7 +36,7 @@ nav
 {
   padding-top:0px; 
   margin: 0px;
-  background-image: url("images/loginbgold.jpg");
+  background-image: url("../img/loginbgold.jpg");
   background-size: cover;
   font-family: 'Raleway', sans-serif;
   color: #FFF;
@@ -46,6 +46,7 @@ nav
 
 .logintitle
 {
+  font-weight: bolder;
 	text-align: center;
 	font-size: 50px;
 	color: black;
@@ -54,7 +55,7 @@ nav
     -webkit-text-stroke-color: black;
 }
 
-.container 
+.containerlog 
 {
   min-height: 350px;
   max-width: 350px;
@@ -69,13 +70,13 @@ nav
   overflow: hidden;
   -webkit-animation: hi 2s;
   animation: hi 2s;
-  -webkit-transform: translateZ(0px);
+  -o-webkit-transform: translateZ(0px);
   opacity: 0.9;
   border-radius: 9px;
 
 }
 
-.container * 
+.containerlog * 
 {
   box-sizing: border-box;
 }
@@ -99,13 +100,13 @@ nav
   padding-top: 15px;
 	padding-left:12px;
   background: -webkit-gradient(linear, right top, left top, from(black), to(grey));
-  background-image: url("images/logincontainer.jpg");
+  background-image: url("../img/logincontainer.jpg");
 }
 
 .pages .page.play
 {
   background: -webkit-gradient(linear, right top, left top, from(black), to(grey));
-   background-image: url("images/logincontainer.jpg");
+   background-image: url("../img/logincontainer.jpg");
 }
 
 .pages .page .title 
@@ -339,7 +340,13 @@ input[type=radio]:nth-of-type(2):checked ~ .pages .page:nth-of-type(2) .input:nt
 /* --------------------------------------------------------------------------MAINSIGNUP --------------------------------------------------------------- */
 #msbody
 {
-	background-image: url("images/loginbgold.jpg");	
+  padding-top:0px; 
+  margin: 0px;
+  background-image: url("../img/loginbgold.jpg");
+  background-size: cover;
+  font-family: 'Raleway', sans-serif;
+  color: #FFF;
+  height: 90%;
 }
 .mscenter {
             display: flex;
@@ -360,12 +367,13 @@ input[type=radio]:nth-of-type(2):checked ~ .pages .page:nth-of-type(2) .input:nt
 		{
 		   text-align: center;
 			-webkit-text-fill-color: white;
+      font-weight: bolder;
     -webkit-text-stroke-width: 0.2px;
     -webkit-text-stroke-color: white;
 		}
 #msbut
 {
-	background-image: url("images/logincontainer.jpg");
+	background-image: url("../img/logincontainer.jpg");
 	border: 2px solid blue;	
 	-webkit-text-fill-color: white;
 }
@@ -374,7 +382,7 @@ input[type=radio]:nth-of-type(2):checked ~ .pages .page:nth-of-type(2) .input:nt
 
 #grbody {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: url("images/logincontainer.jpg");
+    background: url("../img/logincontainer.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -545,7 +553,7 @@ input[type=radio]:nth-of-type(2):checked ~ .pages .page:nth-of-type(2) .input:nt
 	background-color: black;
 	padding-top: 150px;
 	padding-bottom: 150px;
-	background-image: url("images/loginbg.jpeg");
+	background-image: url("../img/loginbg.jpeg");
 }
 .hmlight {
 	font-weight: bold;
@@ -620,7 +628,7 @@ input[type=radio]:nth-of-type(2):checked ~ .pages .page:nth-of-type(2) .input:nt
 /* Parallax Section */
 .hmbanner {
 	background-color: yellow;
-	background-image: url(../images/parallax.png);
+	background-image: url(../img/parallax.png);
 	height: 400px;
 	background-attachment: fixed;
 	background-size: cover;

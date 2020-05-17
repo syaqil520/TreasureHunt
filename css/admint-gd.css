@@ -1,0 +1,194 @@
+body{
+  background-color: #D0D3D4 ;
+}
+
+.card-header{
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+}
+
+.btndetail{
+  width: auto;
+  margin: 5px 5px;
+
+}
+
+.eventName{
+  color: white;
+  font-weight: bold;
+  font-family: 'Anton', sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+/* ! collapsible */
+.collapsible{
+  margin-top: 5px;;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Anton', sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.active, .collapsible:hover{
+  background-color: #F1C40F;
+}
+
+.content{
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.table{
+  margin-top: 5px;
+}
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: F1C40F;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* !The Close Button */
+.close1 {
+  color: red;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close2 {
+  color: red;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-body {padding: 2px 16px;}
+
+/* !button */
+
+.button{
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: inset 0 0 0 2px #585858;
+  color: #585858 !important;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: 900;
+  height: 3.5em;
+  letter-spacing: 0.35em;
+  line-height: 3.45em;
+  overflow: hidden;
+  padding: 0 1.25em 0 1.6em;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.button:hover{
+  color: #D4AC0D !important;
+  box-shadow: inset 0 0 0 2px #D4AC0D;
+}
+
+.button:active{
+  background-color: rgba(242, 132, 158, 0.1);
+}
+
+.button.small{
+  font-size: 0.6em;
+}
+
+.button.primary{
+  box-shadow: none;
+  background-color: #F1C40F ;
+  color: black !important;
+  
+}
+
+.button.primary:hover{
+  background-color: #585858;
+}

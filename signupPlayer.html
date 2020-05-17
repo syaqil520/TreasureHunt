@@ -3,6 +3,9 @@
 	<head>	
 		<title>SIGNUP PLAYER</title>
 		<link href="css/registerOP.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="css/nav_footer.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 		<!--webfonts-->	
@@ -16,12 +19,19 @@
 	<body>	
 		<header></header>
 
-    <nav>
-    	<img src="images/logo1.jpg" alt="HOME" height="160px" weight="160px">&nbsp;
-       	<a class="cc" href="index.html">HOME</a>
-    
-	  	<a class="cc" href="login.html">LOGIN</a>
-    </nav>
+    <nav style="background-color: black;" class="navbar navbar-expand-lg">
+        <div class="container"><a href="index.html" class="navbar-brand nav-title"><img src="img/logo.png" width="40"> Treasure: Be The King</a>
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+            
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="login.html" class="nav-link text-uppercase font-weight-bold">Login<span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link text-uppercase font-weight-bold">Home</a></li>
+                </ul>
+            </div>
+        </div>
+        
+      </nav>
 		
 			<!--start-login-form-->
 				<div class="main">
@@ -41,8 +51,8 @@
 							  <input type="password" value=" Confirm Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' Confirm Password';}" >
 								
 								 <div class="Remember-me">
-<div class="button">
-		    <a href="11)PlayerHome - DONE.html"><input type="button" value="Register" ></a>
+							<div class="button">
+		    				<a href="player.html"><input type="button" value="Register" ></a>
 								</div>
 									<div class="clear"> </div>
 							  </div>
@@ -54,6 +64,57 @@
 						
 			  </div>
 	</body>
+
+<!-- ======= Footer ======= -->
+<footer class="site-footer" style="margin-top: 100px; background-image: url(img/logincontainer.jpg);">
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">Treasure: <i>Be The King </i> is the largest online destination dedicated to treasure hunt game. Here you can discover new games from various of organizer. Join game and win the prize.</p>
+        </div>
+  
+        <div class="col-xs-6 col-md-3">
+          <h6>Tag</h6>
+          <ul class="footer-links">
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#team">Our Team</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+
+          </ul>
+        </div>
+  
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+			<li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+       <a href="#">Treasure: Be the King</a>.
+          </p>
+        </div>
+  
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>  
+          </ul>
+        </div>
+      </div>
+    </div>
+    </footer><!-- End Footer -->
+
 </html>
 
 

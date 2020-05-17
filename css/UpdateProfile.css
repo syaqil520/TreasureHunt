@@ -1,0 +1,304 @@
+body{
+	font-family: "Proxima Nova Bold","Segoe UI","Roboto","Droid Sans","Helvetica Neue", Arial, sans-serif;
+	font-size: 15px;
+	font-weight: bolder;
+	line-height: 1.42857;
+	color: #ffffff;
+	/*background-color: #fff;*/
+	/* background-color: #FBEC5D; */
+	background-image: url("../img/hunter.jpg");
+	background-repeat: no-repeat;
+	/* background-position: bottom; */
+	background-size: 100%;
+}
+
+/*button{
+	text-decoration: none;
+	background-color: transparent;
+}*/
+
+#blueA{
+	color: #5db3f5;
+
+}
+
+#blueA:hover{
+	color: #333333 ;
+}
+
+#wrapper{
+	padding-top: 10px;	
+}
+
+div{
+	display: block;
+}
+/* 
+.ship{
+	position: fixed;
+	width: 550px;
+	height:450px;
+	background-image: url("../img/ship2.png");
+	bottom:30px;
+	animation: mymove 50s linear infinite;
+} */
+
+@keyframes mymove{
+	from{left:-700px;}
+	to{left: 1400px}
+}
+
+.row{
+	margin: auto;
+	/*background-color: #63c5DA;*/
+	padding-top: 2em;
+	padding-bottom: 1em;
+	width: auto;
+}
+
+.row:before, .row:after{
+	display: table;
+	content: " ";
+}
+
+*:before, *:after{
+	box-sizing: border-box;
+}
+
+/*.col-9, .col-3{
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}*/
+
+/*.text-center{
+	text-align: center;
+}
+*/
+img{
+	vertical-align: middle;
+	border: 0;
+}
+
+.avatar{
+	border-radius: 50%;
+	margin-right: 5px;
+}
+
+.avatar.avatar-normal{
+	width: 150px;
+	height: 150px;
+}
+/*
+.img-upload > input{
+	display: none;
+}
+
+#attach-doc{
+	cursor: pointer;
+}*/
+
+.btn-block+.btn-block{
+	margin-top: 5px;
+}
+
+.btn-default{
+	background-color: #fff;
+	border-color: #ccd9e9;
+}
+
+h3{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-family: inherit;
+	font-weight: 300;
+	line-height: 1.1;
+	color: inherit;
+	display: block;
+}
+
+form{
+	display: block;
+	margin-top: 0em;
+}
+
+.form-group{
+	position: relative;
+	margin-bottom: 15px;
+}
+
+label{
+	max-width: 100%;
+	margin-bottom:5px;
+	cursor: default;
+}
+
+.control-label{
+	font-weight: 500;
+	color: #79899d;
+	font-size: 11px;
+	text-transform: uppercase;
+	display: inline-flex;
+}
+
+abbr[title]{
+	text-decoration: none;
+	cursor: help;
+	border-bottom: none;
+}
+
+input, button, select{
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	color: inherit;
+	font: inherit;
+	margin: 0;
+}
+
+.form-control{
+	box-shadow: none;
+	padding: 9px 14px;
+	height: 40px;
+	display: block;
+	width: 100%;
+	border: 1px solid #ccc;  
+	border-radius: 10px; 
+
+}
+
+.input-group .form-control{
+	z-index: 2;
+	float: left;
+	min-width: 0;
+}
+
+.input-group[class*="col-"]{
+	float: none;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.form-action>*{
+	margin-left: 1ex;
+}
+
+.pull-right{
+	float: right !important;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+select.form-control{
+	font-size: 1.1em;
+}
+
+select.form-control.col-3, .col-4{
+	width: auto !important;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-right: 0.5em
+
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .deletebtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+  background-color: #f44336;
+}
+
+/* Add padding and center-align text to the container 
+.container {
+  padding: 16px;
+  text-align: center;
+}*/
+
+/* The Modal (background) */
+#id01.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(71,78,93,0.7);
+/*  opacity: 0.3;*/
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  color: black;
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn {
+     width: 100%;
+  }
+}
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title Page-->
+    <title>Fill Details for Cash   </title>
+
+    <!-- Icons font CSS-->
+    <link href="assets/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+
+
+    <!-- Vendor CSS-->
+    <link href="assets/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="assets/css/cashmain.css" rel="stylesheet" media="all">
+    <link href="assets/css/table.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w780">
+            <div class="card card-3">
+                <div class="card-heading">
+                    <img src="assets/img/Pirate_Logo.png" alt="" style="width: 100px; height: 100px;">
+                    <div class="container">
+                        <table class = "thetable" style ="width: 300px;height: 400px;">
+                            <tbody>
+                                <tr>
+                                    <td>Game</td>
+                                    <td>Game 1</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Date</td>
+                                    <td>11/5/2020</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Time</td>
+                                    <td>11:30a.m</td>
+                                </tr>
+                                <tr>
+                                    <td>Participants</td>
+                                    <td>0</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Total Price (MYR) </td>
+                                    <td>RM0.00</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h2 class="title" style= "font-family: skullsandcrossbonesmedium;">Fill in details</h2>
+                    <form method="POST">
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Leader Name" name="name" style= "font-family: skullsandcrossbonesmedium;">
+                        </div>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="gender" >
+                                    <option disabled="disabled" selected="selected" >Gender</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Other</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="email" placeholder="Email" name="email" style= "font-family: skullsandcrossbonesmedium;">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Phone" name="phone" style= "font-family: skullsandcrossbonesmedium;">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Number of Participants" name="Participants" style= "font-family: skullsandcrossbonesmedium;">
+                        </div>
+                        <div class="p-t-10">
+                            <form action="receipt.html" method = "get"><button class="btn btn--pill btn--green" type="submit" style="display: none;">hidden</button></form>
+                            <form action="receipt.html" method="get">
+                                <input type="submit" class="btn btn--pill btn--green"  value="Submit" 
+                                     name="Submit" style= "font-family: skullsandcrossbonesmedium;"  />
+                            </form>
+                     
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="assets/vendor/select2/select2.min.js"></script>
+    <script src="assets/vendor/datepicker/moment.min.js"></script>
+    <script src="assets/vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="assets/js/global.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->
